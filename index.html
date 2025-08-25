@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindTrack - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Banner styles */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+        }
+
+        .banner h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0,114,206,0.7);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+
+        /* Navigation bar */
+        .banner-nav {
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .banner-nav a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #0059a6;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .banner-nav a:hover,
+        .banner-nav a.active {
+            background-color: #003d70;
+        }
+
+        /* Homepage sections */
+        main section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        main section:nth-child(even) {
+            flex-direction: row-reverse; /* alternate sides */
+        }
+
+        main section img {
+            width: 45%;
+            max-width: 400px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        main section .text {
+            width: 50%;
+            max-width: 600px;
+            padding: 0 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Fade edges for images */
+        main section img {
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+        }
+
+        @media (max-width: 768px) {
+            main section {
+                flex-direction: column;
+                text-align: center;
+            }
+            main section .text,
+            main section img {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner with Navigation -->
+    <header class="banner">
+        <img src="images/banner.jpg" alt="Banner">
+        <nav class="banner-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="prototype.html">App Prototype</a>
+            <a href="marketing.html">Marketing</a>
+            <a href="userguide.html">User Guide</a>
+        </nav>
+        <h1>MindTrack</h1>
+    </header>
+
+    <!-- Homepage Content -->
+    <main>
+        <section>
+            <img src="images/moods.jpg" alt="Track Your Mood">
+            <div class="text">
+                <h2>Track Your Mood</h2>
+                <p>Stay aware of your emotional state each day using MindTrack’s easy-to-use mood tracker. Identify trends and patterns to help improve mental wellness.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="text">
+                <h2>Build Healthy Habits</h2>
+                <p>Set and maintain habits like exercise, hydration, and mindfulness. MindTrack keeps you accountable and motivated with reminders and progress tracking.</p>
+            </div>
+            <img src="images/healthy_habits.jpg" alt="Healthy Habits">
+        </section>
+
+        <section>
+            <img src="images/organized.jpg" alt="Stay Organized">
+            <div class="text">
+                <h2>Stay Organized</h2>
+                <p>Manage your tasks, appointments, and notes all in one place. MindTrack helps you plan your day efficiently and stay on top of your goals.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MindTrack | Designed for ITCC298 Capstone</p>
+    </footer>
+</body>
+</html>

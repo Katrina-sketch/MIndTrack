@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>User Guide</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="userguide.html">User Guide</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Pale green box containing centered sections -->
+        <div class="guide-box">
+            <h2>Introduction</h2>
+            <p>
+                This app is designed to help users build and maintain healthy mental health habits.
+                Here you will find an overview of the app’s purpose and how it can benefit you.
+            </p>
+
+            <h2>Technical Specifications</h2>
+            <p>
+                The app runs on modern web browsers and mobile devices. It requires internet access
+                for updates and syncing data. Recommended browsers include Chrome, Firefox, Safari, and Edge.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mental Health App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
